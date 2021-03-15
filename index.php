@@ -29,6 +29,7 @@ class Avengers {
     }
     public function addAvenger(Superhero $superhero) {
         $this->avengers[] = $superhero;
+        echo 'Eroe aggiunto agli Avengers:'. $superhero->name . '</br>Nome in codice:'. $superhero->artName . '</br>Posizione attuale:'. $superhero->city . '</br></br>';
     }
 
     public function getAvengers() {
@@ -61,7 +62,7 @@ $theAvengers->addAvenger($blackWidow);
 $theAvengers->addAvenger($cptAmerica);
 $theAvengers->addAvenger($thor);
 
-var_dump($theAvengers->getAvengers());
+
 
 
 ?>
